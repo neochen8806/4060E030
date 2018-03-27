@@ -63,3 +63,18 @@ int main (){         //宣告main函數
  return 0; //回傳值0
 }
 ====================================================================
+public class VariableDemo {
+    public static void main(String[] args) {
+    
+          //宣告並指定值
+          int a, b;
+          //宣告變數c=a+b
+          int c = a + b;
+
+          //設定初始值a=10,b=20
+          a=10;
+          b=20;
+          System.out.println("c");
+     }
+  }
+          
