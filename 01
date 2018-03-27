@@ -63,7 +63,7 @@ int main (){         //宣告main函數
  return 0; //回傳值0
 }
 ====================================================================
-public class VariableDemo {
+public class VariableDemo {  //表示公開名稱
     public static void main(String[] args) {
     
           //宣告並指定值
@@ -74,7 +74,7 @@ public class VariableDemo {
           //設定初始值a=10,b=20
           a=10;
           b=20;
-          System.out.println("c");
+          System.out.println("c"); 印出c值
      }
   }
           
