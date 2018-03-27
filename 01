@@ -1,0 +1,25 @@
+
+
+====================================================================
+#include <stdio.h>  //載入輸入輸出
+ 
+int main()  //宣告main函數 
+{
+    printf("Hello, World! \n"); //印出Hello, World!  ,  \n自動換行
+ 
+    return 0; //回傳值0
+}
+====================================================================
+#include <iostream> //載入輸入輸出
+using namespace std; //名稱空間
+int main() //宣告main函數
+{
+    cout << "Hello, world!" << endl;  //印出Hello, World! , endl斷行
+    return 0; //回傳值0
+}
+====================================================================
+public class HelloWorld {  //表示公開名稱
+    public static void main(String[] args) { 
+        System.out.println("Hello World");
+    }
+}
