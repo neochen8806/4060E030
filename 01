@@ -23,3 +23,43 @@ public class HelloWorld {  //表示公開名稱
         System.out.println("Hello World");    //印出 Hello World
     }
 }
+====================================================================
+#include <stdio.h> //載入輸入輸出
+
+int main () //宣告main函數
+{
+  //宣告整數變數 a,b,c
+  int a, b;
+  int c;
+
+ 
+  //設定初始值a=10,b=20
+  a = 10;
+  b = 20;
+  
+  c = a + b; //設定c值為a+b
+  printf("value of c: %d \n", c); //印出c值
+ 
+ 
+  return 0; //回傳值0
+}
+====================================================================
+#include <iostream>  //載入輸入輸出
+using namespace std; //名稱空間
+ 
+int main (){         //宣告main函數
+
+ int a, b;
+ int c;
+
+//設定初始值a=10,b=20
+ a=10;
+ b=20;
+
+ c = a + b; //設定c值為a+b
+
+ cout << c; //印出c值
+ 
+ return 0; //回傳值0
+}
+====================================================================
