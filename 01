@@ -19,7 +19,7 @@ int main() //宣告main函數
 }
 ====================================================================
 public class HelloWorld {  //表示公開名稱
-    public static void main(String[] args) { 
-        System.out.println("Hello World");
+    public static void main(String[] args) {  //static表示靜態的，"void"表示這個方法執行結束後不傳回任何值， main方法程式起始點
+        System.out.println("Hello World");    //印出 Hello World
     }
 }
