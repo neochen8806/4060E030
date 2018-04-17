@@ -77,7 +77,91 @@ return 0;
 
 ```
 
-###### exercise2 矩陣相乘
+###### exercise
+
+```
+
+```
+
+###### exercise
+
+```
+
+```
+
+###### exercise
+
+```
+
+```
+
+###### exercise
+
+```
+
+```
+
+###### exercise
+
+```
+
+```
+
+###### exercise
+
+```
+
+```
+
+###### exercise
+
+```
+
+```
+
+###### exercise
+
+```
+
+```
+
+###### exercise
+
+```
+
+```
+
+###### exercise
+
+```
+
+```
+
+###### exercise
+
+```
+
+```
+
+###### exercise
+
+```
+
+```
+
+###### exercise
+
+```
+
+```
+
+###### exercise
+
+```
+
+```
+
+###### exercise
 
 ```
 
