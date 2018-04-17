@@ -100,6 +100,7 @@ int main()
     return 0;
 }
 ```
+![result](PIC/array.PNG)
 
 ###### exercise
 
