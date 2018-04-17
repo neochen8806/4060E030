@@ -77,10 +77,26 @@ return 0;
 
 ```
 
-###### exercise
+###### exercise_array
 
 ```
+#include <iostream>
+using namespace std;
+int main()
+{
+	int i,a[10],b=1;
 
+	for(i=0;i<10;i++)
+	{
+		a[i]=b;
+		b++;
+    }
+
+	for(i=0;i<10;i++)
+		cout << a[i] << endl;
+		
+    return 0;
+}
 ```
 
 ###### exercise
