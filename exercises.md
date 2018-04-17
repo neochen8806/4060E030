@@ -84,6 +84,8 @@ return 0;
 using namespace std;
 int main()
 {
+	cout << "2018.04.17" << endl;
+	
 	int i,a[10],b=1;
 
 	for(i=0;i<10;i++)
