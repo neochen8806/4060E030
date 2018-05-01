@@ -123,9 +123,22 @@ int main()
 
 ```
 
-###### exercise
+###### exercise string
 
 ```
+#include <iostream>
+#include <string>
+using namespace std;
+int main()
+{
+
+    string name;
+    cout << "enter your name: ";
+    getline(cin, name, '\n'); 
+    name.append("4060E030");
+    cout << "Your name is " << name << endl;
+	
+}
 
 ```
 
