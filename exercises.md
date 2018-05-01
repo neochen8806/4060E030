@@ -141,6 +141,7 @@ int main()
 }
 
 ```
+![result](PIC/name.PNG)
 
 ###### exercise
 
