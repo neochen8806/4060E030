@@ -200,9 +200,34 @@ int main()
 ###### exercise
 
 ```
-
+#include <iostream>
+using namespace std;
+void ShowMessage(); 
+void ShowAge();
+void ShowIndex(); 
+int main()
+{
+	ShowMessage(); 
+	ShowAge();
+	ShowIndex(); 
+}
+void ShowMessage()
+{
+	cout << "Hello偉大的恩師" << endl;
+	cout << "我是您的學生 陳韡杰" << endl;
+}
+void ShowAge()
+{
+	int iAge=18;
+	cout << "age is :" << iAge << endl;
+}
+void ShowIndex()
+{
+	int iIndex=10;
+	cout << "Index is :" << iIndex << endl;
+}
 ```
-
+![result](PIC/123.PNG)
 ###### exercise
 
 ```
