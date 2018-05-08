@@ -166,6 +166,7 @@ int main()
   cout << "2018/05/08 4060E030 陳韡杰" << endl; 
 }
 ```
+![result](PIC/DSC_1264.JPG)
 ![result](PIC/字串截圖.PNG)
 
 ###### exercise
