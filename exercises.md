@@ -231,9 +231,29 @@ void ShowIndex()
 ###### exercise
 
 ```
+#include <iostream>
+#include <fstream>
+using namespace std;
 
+int main()
+{
+  ofstream output;
+
+  output.open("scores123.txt");
+
+  output << "John" << " " << "Tank" << " " << "Smith" 
+    << " " << 95 << endl;
+  output << "Eric" << " " << "King" << " " << "Jones" 
+    << " " << 87 << endl;
+
+  output.close();
+
+  cout << "Done123" << endl;
+
+  return 0;
+}
 ```
-
+![result](PIC/creat.PNG)
 ###### exercise
 
 ```
