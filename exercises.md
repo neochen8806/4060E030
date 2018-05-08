@@ -5,6 +5,7 @@
 #include <stdio.h>
 int main(void)
 {
+printf("4060E030 陳韡杰\n");
 int i,j;
 int a[3][3],b[3][3],c[3][3];
 printf("please input the array for a:\n"); 
@@ -36,7 +37,9 @@ printf("\n");
 return 0;
 }
 
+
 ```
+![result](PIC/plus.PNG)
 
 ###### exercise2 矩陣相乘
 
