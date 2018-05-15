@@ -287,7 +287,7 @@ int main()
 	cout << str4 << endl; //會輸出 t st
 	cout << str5 << endl; //會輸出 first
 
-	// assignment operator
+	// assignment operator ///
 	string str6 = str4;
 
 	// clear function deletes all character from string
@@ -375,7 +375,116 @@ int main()
 ###### exercise
 
 ```
+[1]BMI類別的定義 ==> BMI.h
+#ifndef BMI_H
+#define BMI_H
 
+#include <string>
+using namespace std;
+
+class BMI
+{
+public:
+  BMI(const string& newName, int newAge, double newWeight, double newHeight);
+  BMI(const string& newName, double newWeight, double newHeight);
+  double getBMI() const;
+  string getStatus() const;
+  string getName() const;
+  int getAge() const;
+  double getWeight() const;
+  double getHeight() const;
+
+private:
+  string name;
+  int age;
+  double weight;
+  double height;
+};
+
+#endif
+
+[2]BMI類別的實作 ==> BMI.cpp
+
+#include <iostream>
+#include "BMI.h"
+using namespace std;
+
+BMI::BMI(const string& newName, int newAge, 
+  double newWeight, double newHeight)
+{
+  name = newName;
+  age = newAge;
+  weight = newWeight;
+  height = newHeight;
+}
+
+BMI::BMI(const string& newName, double newWeight, double newHeight)
+{
+  name = newName;
+  age = 20;
+  weight = newWeight;
+  height = newHeight;
+}
+
+double BMI::getBMI() const
+{
+  const double KILOGRAMS_PER_POUND = 0.45359237;
+  const double METERS_PER_INCH = 0.0254;
+  double bmi = weight * KILOGRAMS_PER_POUND /
+    ((height * METERS_PER_INCH) * (height * METERS_PER_INCH));
+  return bmi;
+}
+
+string BMI::getStatus() const
+{
+  double bmi = getBMI();
+  if (bmi < 18.5)
+    return "Underweight";
+  else if (bmi < 25)
+    return "Normal";
+  else if (bmi < 30)
+    return "Overweight";
+    else
+    return "Obese";
+}
+
+string BMI::getName() const
+{
+  return name;
+}
+
+int BMI::getAge() const
+{
+  return age;
+}
+
+double BMI::getWeight() const
+{
+  return weight;
+}
+
+double BMI::getHeight() const
+{
+  return height;
+}
+[3]使用BMI類別==> BMI.cpp
+
+#include <iostream>
+#include "BMI.h"
+using namespace std;
+
+int main()
+{
+  BMI bmi1("John Doe", 18, 145, 70);
+  cout << "The BMI for " << bmi1.getName() << " is "
+    << bmi1.getBMI() << " " << bmi1.getStatus() << endl;
+
+  BMI bmi2("Susan King", 215, 70);
+  cout << "The BMI for " << bmi2.getName() << " is "
+    << bmi2.getBMI() << " " + bmi2.getStatus() << endl;
+
+  return 0;
+}
 ```
 
 ###### exercise
