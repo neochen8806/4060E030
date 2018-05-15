@@ -487,6 +487,7 @@ int main()
 }
 ```
 ![result](PIC/bmi.PNG)
+http://depart.femh.org.tw/dietary/3opd/bmi.htm
 
 ###### exercise
 
