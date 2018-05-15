@@ -486,6 +486,7 @@ int main()
   return 0;
 }
 ```
+![result](PIC/.PNG)
 
 ###### exercise
 
