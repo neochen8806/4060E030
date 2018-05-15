@@ -284,7 +284,7 @@ int main()
 	cout << str1 << endl; //會輸出 first string
 	cout << str2 << endl; //會輸出 first string
 	cout << str3 << endl; //會輸出 #####
-	cout << str4 << endl; //會輸出 string
+	cout << str4 << endl; //會輸出 t st
 	cout << str5 << endl; //會輸出 first
 
 	// assignment operator
