@@ -486,7 +486,7 @@ int main()
   return 0;
 }
 ```
-![result](PIC/.PNG)
+![result](PIC/bmi.PNG)
 
 ###### exercise
 
