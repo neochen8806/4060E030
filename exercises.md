@@ -369,6 +369,8 @@ int main()
 
 
 ```
+![result](PIC/1233.PNG)
+![result](PIC/12344.PNG)
 
 ###### exercise
 
