@@ -500,7 +500,7 @@ class StackOfIntegers  //類別名稱
 public:  //公開的::可以被存取
   StackOfIntegers();  //建構子
   bool isEmpty() const;  //()測試是否為空的函數
-  int peek() const;    //取出最上層的函數
+  int peek() const;    //最上層的函數
   void push(int value);   //把資料丟入的函數
   int pop();   //取出最上層的函數
   int getSize() const;  //取出堆疊大小的函數
@@ -514,33 +514,33 @@ private:    //1.打把資料隱藏起來  2.使用上述公開函數來存取
 #include "StackOfIntegers.h"
 
 StackOfIntegers::StackOfIntegers() //類別的建構子的實作
-{
+{ 
   size = 0;  //閃生大小為0的StackIntegers物件
 }
 
 bool StackOfIntegers::isEmpty() const //測試是否為空的實作
-{
+{  //此函數執行後回傳的值為布林，真或假
 return (size == 0);   //()判斷size == 0 諾大小為0回傳假 ; 諾大小不為0回傳真
 }
 
-int StackOfIntegers::peek() const  //類別 peek 最上層元素
+int StackOfIntegers::peek() const  //最上層的函數
 {
-  return elements[size - 1];  //回傳 大小-1 位子的元素
+  return elements[size - 1];  //回傳 size-1 位子的函數
 }
 
-void StackOfIntegers::push(int value)  //類別 push 傳入整數value  無須回傳值
+void StackOfIntegers::push(int value)  //把資料丟入的函數
 {
-  elements[size++] = value;   //
+  elements[size++] = value;   //把資料丟入最上層後 size+1
 }
 
-int StackOfIntegers::pop()
+int StackOfIntegers::pop() //取出最上層的函數
 {
-  return elements[--size];
+  return elements[--size]; //取出 size-1 後的位子的函數
 }
 
-int StackOfIntegers::getSize() const
+int StackOfIntegers::getSize() const //取出堆疊大小的函數
 {
-  return size;
+  return size;  //取出size的值
 }
 [3]使用==>TestStackOfIntegers.cpp
 
