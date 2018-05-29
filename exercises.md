@@ -492,6 +492,74 @@ http://depart.femh.org.tw/dietary/3opd/bmi.htm
 ###### exercise
 
 ```
+#ifndef STACK_H
+#define STACK_H
+
+class StackOfIntegers  //類別名稱
+{
+public:  //公開的::可以被存取
+  StackOfIntegers();  //建構子
+  bool isEmpty() const;  //()測試是否為空的函數
+  int peek() const;    //取出最上層的函數
+  void push(int value);   //把資料丟入的函數
+  int pop();   //取出最上層的函數
+  int getSize() const;  //取出堆疊大小的函數
+
+private:    //1.打把資料隱藏起來  2.使用上述公開函數來存取
+  int elements[100];  //整數類型的元素 大小為100
+  int size;          //整數類型的大小
+};
+
+
+#include "StackOfIntegers.h"
+
+StackOfIntegers::StackOfIntegers() //類別的建構子的實作
+{
+  size = 0;  //閃生大小為0的StackIntegers物件
+}
+
+bool StackOfIntegers::isEmpty() const //測試是否為空的實作
+{
+return (size == 0);   //()判斷size == 0 諾大小為0回傳假 ; 諾大小不為0回傳真
+}
+
+int StackOfIntegers::peek() const  //類別 peek 最上層元素
+{
+  return elements[size - 1];  //回傳 大小-1 位子的元素
+}
+
+void StackOfIntegers::push(int value)  //類別 push 傳入整數value  無須回傳值
+{
+  elements[size++] = value;   //
+}
+
+int StackOfIntegers::pop()
+{
+  return elements[--size];
+}
+
+int StackOfIntegers::getSize() const
+{
+  return size;
+}
+[3]使用==>TestStackOfIntegers.cpp
+
+#include <iostream>
+#include "StackOfIntegers.h"
+using namespace std;
+
+int main()
+{
+  StackOfIntegers stack;
+
+  for (int i = 0; i < 10; i++)
+    stack.push(i);
+
+  while (!stack.isEmpty())
+    cout << stack.pop() << " ";
+
+  return 0;
+}
 
 ```
 
