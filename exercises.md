@@ -530,18 +530,25 @@ int StackOfIntegers::peek() const  //最上層的函數
 
 void StackOfIntegers::push(int value)  //把資料丟入的函數
 {
-  elements[size++] = value;   //把資料丟入最上層後 size+1
+  elements[size++] = value;   //先把資料丟入size後 在執行size++  
 }
-
+ 
 int StackOfIntegers::pop() //取出最上層的函數
 {
-  return elements[--size]; //取出 size-1 後的位子的函數
+  return elements[--size]; //先執行size--後 再取出size位子的函數
 }
 
 int StackOfIntegers::getSize() const //取出堆疊大小的函數
 {
   return size;  //取出size的值
 }
+
+
+```
+
+###### exercise
+
+```
 [3]使用==>TestStackOfIntegers.cpp
 
 #include <iostream>
@@ -560,13 +567,6 @@ int main()
 
   return 0;
 }
-
-```
-
-###### exercise
-
-```
-
 ```
 
 ###### exercise
